@@ -1,0 +1,107 @@
+@use "./partials/variables.scss" as *;
+@use "./partials/mixins.scss" as *;
+@use "./partials/global.scss" as *;
+
+.bandheader {
+    background: #000000;
+    background-image: url("../assets/images/hero-bio.jpg");
+    background-size: cover;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 1rem;
+    
+    &__title {
+        font-family: "avenir-pro-demi";
+        font-size: 2rem;
+        color: #FFFFFF;
+    }
+}
+
+.about {
+    font-family: "avenir-pro-demi";
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    &__musicians {
+        font-size: 1.8rem;
+        color:#000000;
+    }
+
+    &__image {
+        img {
+            width: 100%;
+
+        }  
+    }
+
+    &__quote {
+        &--speaker {
+            font-size: 0.9rem;
+        }
+    }
+
+    &__content {
+        &--subtitle {
+            font-size: 1.5rem;
+        }
+
+        &--bio {
+            font-family: "avenir-pro-regular";
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #FFFFFF;
+
+    &__title {
+        font-family: "avenir-pro-demi";
+        padding-top: 1rem; 
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    @include tablet{
+        &__title {
+            font-size: 2rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        img {
+            flex-wrap: wrap;
+            width: 30%;
+        }
+    }
+
+    @include desktop{
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        &__title {
+            font-size: 2rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    
+    }
+    
+}
+
+
+
+
+
+
+
+
