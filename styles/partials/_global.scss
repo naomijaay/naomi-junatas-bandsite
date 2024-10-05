@@ -2,15 +2,6 @@
 @use "./variables" as *;
 
 
-/* is bio only for the header and footer??? only work on sass file!! */
-
-  /* 
-  
-  make a global css inside partials
-  this will be for nav and footer
-  anything shared with multiple pages, use that
-  reset values as well - border box, body font family*/
-
 @font-face {
     font-family: "avenir-pro-regular";
     src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf");
@@ -32,13 +23,14 @@ body {
 }
 
 .nav {
-    background-color: #323232;
-    color: #FFFFFF;
+    background-color: $dark;
+    color: $white;
     font-family: "avenir-pro-regular";
 
     &__logo {
         display: flex;
         justify-content: center;
+        padding-bottom: 1rem;
 
         &--image {
             max-width: 7.5rem;
@@ -52,24 +44,89 @@ body {
         flex-direction: row;
         max-width: 100%;
         justify-content: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
 
-        &--item--current {
+        &--item {
+
+            &--other {
+                padding-bottom:1rem;
+                padding-left:20%;
+                padding-right:25%;
+            }
+
+            &--current {
             padding-bottom: 1rem;
-            padding-right: 18vw;
-            padding-left: 21vw;
-            border-bottom: 0.125rem solid #FFFFFF;
+            padding-right: 18%;
+            padding-left: 21%;
+            border-bottom: 0.125rem $white;
+            }
+
+            &--link {
+                text-decoration: none;
+                color: $white;
+            }
+
+
+        }
+    }
+
+    @include tablet {
+        display: flex;
+
+        &__logo {
+            &--image {
+                width: 100%;
+                padding-left: 2rem;
+                padding-top: 1rem;
+                padding-bottom: 0.5rem;
+            }
         }
 
-        &--item--link {
-            text-decoration: none;
-            color: #FFFFFF;
+        &__list {
+            list-style-type: none;
+            font-size: 1rem;
+            justify-content: flex-start;
+            padding-left: 1rem;
+
+            &--item {
+                &--current {
+                    border-bottom: 0.125rem $white;
+                    padding: 0;
+                    padding-top: 2rem;
+                }
+
+                &--other {
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    padding-top: 2rem;
+
+                }
+            }
+        }
+    }
+
+    @include desktop {
+        display: flex;
+
+        &__logo {
+            &--image {
+                width: 100%;
+                padding-left: 5rem;
+            }
+        }
+
+        &__list {
+            list-style-type: none;
+            font-size: 0.9rem;
         }
     }
 }
 
 
 .footer {
-    background-color: #323232;
+    background-color: $dark;
     font-family: "avenir-pro-regular";
     color: #FFFFFF;
     padding-left: 1rem;
