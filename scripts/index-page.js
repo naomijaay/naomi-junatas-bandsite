@@ -97,3 +97,20 @@ function submitComment(event) {
 
     renderComments();
 }
+
+// idk why this isnt working grrr
+
+const form = document.querySelector(".commentForum");
+form.addEventListener("submit", submitComment);
+
+renderComments();
+
+function renderComments() {
+    clearComments();
+    comments.reverse();
+
+    for (let i = 0; i < comments.length; i++) {
+        displayComment(comments[i]);
+    }
+    comments.reverse();
+}
