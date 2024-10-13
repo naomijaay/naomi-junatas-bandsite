@@ -1,0 +1,20 @@
+@use "./partials/global.scss" as *;
+@use "./partials/variables.scss" as *;
+@use "./partials/mixins.scss" as *;
+
+.bandheader {
+    background-image: url("/assets/images/hero-shows.jpg");
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    opacity:80%;
+    color: $white;
+
+    &__title {
+        font-family: "avenir-pro-demi";
+        font-size: 2rem;
+    }
+}
+
