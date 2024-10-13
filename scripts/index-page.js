@@ -21,5 +21,22 @@ const comments = [
 ];
 
 function displayComment(comment) {
-    const commentBox = document.querySelector(".commentBox";)
+    const commentBox = document.querySelector(".commentBox");
+
+    const commentElement = document.createElement("div");
+    commentElement.classList.add("commentTextBox");
+
+    const commentContent = document.createElement("div");
+    commentContent.classList.add("commentContent");
+
+    const avatarElement = document.createElement("div");
+    avatarElement.classList.add("avatar");
+    commentContent.appendChild(avatarElement);
+
+    const nameElement = document.createElement("h2");
+    nameElement.textContent = comment.name;
+    nameElement.classList.add("commentName");
+    commentContent.appendChild(nameElement);
+    
+
 }
