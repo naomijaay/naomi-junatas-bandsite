@@ -180,15 +180,71 @@
     align-items: flex-start;
     padding-bottom: 2rem;
 
-    &--avatar {
+        &--avatar {
+            border-radius: 3rem;
+            height: 3rem;
+            width: 3rem;
+            margin-right:1rem;
+            margin-top:2rem;
+        }
+    }
+}
+
+.commentForum {
+    padding: 0;
+    padding-top: 1rem;
+    width: 100%;
+
+    label {
+        font-family: "avenir-pro-demi";
+        font-size: 0.8rem;
+        color: #AFAFAF;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    input [type="text"],
+
+    textarea {
+        font-family: "avenir-pro-regular";
+        margin-bottom: 1rem;
+        border: solid #E1E1E1;
+        border-width: 0.15rem;
+        border-radius: 0.2rem;
+        background-color: #FAFAFA;
+        padding: 0.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input [type="text"].error,
+    textarea.error {
+        border-color: #D22D2D;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        background-color: $dark;
+        color: $offwhite;
+        font-family: "avenir-pro-demi";
+        font-size: 1rem;
+        border: none;
+    }
+
+    .avatar {
+        background-color: #E1E1E1 ;
         border-radius: 3rem;
         height: 3rem;
         width: 3rem;
-        margin-right:1rem;
-        margin-top:2rem;
+        margin-right: 1rem;
     }
 
-    }
+    
+
+
 
 }
 
