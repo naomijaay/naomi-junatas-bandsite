@@ -163,6 +163,35 @@
     }
 }
 
+.comments__title {
+    font-size: 2.5rem;
+    font-family: "avenir-pro-demi";
+    padding-left: 2rem;
+}
+
+.comments {
+    margin-left: 3rem;
+    margin-right:3rem;
+
+    &__forum {
+    font-family: "avenir-pro-demi";
+    color: $AFAFAF;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+
+    &--avatar {
+        border-radius: 3rem;
+        height: 3rem;
+        width: 3rem;
+        margin-right:1rem;
+        margin-top:2rem;
+    }
+
+    }
+
+}
+
 
 
 

@@ -9,7 +9,7 @@ const comments = [
         name: "Christina Cabrera",
         date: "10/28/2023",
         comment: "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.",
-    }
+    },
 
     {
         name:"Victor Pinto",
@@ -37,6 +37,19 @@ function displayComment(comment) {
     nameElement.textContent = comment.name;
     nameElement.classList.add("commentName");
     commentContent.appendChild(nameElement);
+
+    const dateElement = document.createElement("p");
+    dateElement.textContent = comment.date;
+    dateElement.classList.add("commentDate");
+    commentContent.appendChild(dateElement);
+
+    commentElement.appendChild(commentContent);
+
+    const commentTextElement = document.createElement("p");
+    commentTextElement.textContent = comment.comment;
+    commentTextElement.classList.add("commentArea");
+    commentElement.appendChild(commentTextElemenet);
     
+    commentBox.appendChild(commentElement);
 
 }
