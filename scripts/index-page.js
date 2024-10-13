@@ -53,3 +53,15 @@ function displayComment(comment) {
     commentBox.appendChild(commentElement);
 
 }
+
+function clearComments () {
+    const commentBox = document.querySelector(".commentBox");
+    commentBox.innerHTML ="";
+}
+
+function renderComments() {
+    clearComments();
+    comments.forEach(comment => {
+        displayComment(comment);
+    })
+}

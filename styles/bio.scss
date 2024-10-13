@@ -167,6 +167,10 @@
     font-size: 2.5rem;
     font-family: "avenir-pro-demi";
     padding-left: 2rem;
+
+    @include desktop {
+        padding-left: 6rem;
+    }
 }
 
 .comments {
@@ -175,7 +179,7 @@
 
     &__forum {
     font-family: "avenir-pro-demi";
-    color: $AFAFAF;
+    color: #AFAFAF;
     display: flex;
     align-items: flex-start;
     padding-bottom: 2rem;
@@ -193,7 +197,7 @@
         padding-left: 4rem;
         padding-right: 4rem;
 
-        &forum {
+        &__forum {
             &--avatar {
                 margin-top: 2rem;
                 margin-right: 1rem;
@@ -205,8 +209,6 @@
         padding-left: 18rem;
         padding-right: 18rem;
     }
-
-
 }
 
 .commentForum {
