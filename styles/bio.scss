@@ -224,6 +224,32 @@
         display: block;
     }
 
+    // temporary add below
+
+    // Global styles for both input and textarea
+input, textarea {
+    font-family: "avenir-pro-demi"; // Ensure both have the same font
+    font-size: 1rem; // Adjust font size
+    border: 1px solid $dark; // Make sure the border matches
+    padding: 10px; // Ensure equal padding
+    outline: none; // Remove default outline
+    width: 100%; // Match width
+    box-sizing: border-box; // Ensure padding and border are included in the element’s width and height
+}
+
+// Additional styles for the input field
+input {
+    margin-bottom: 1rem; // Space between input and textarea if needed
+}
+
+// Specific styles for the textarea
+textarea {
+    resize: vertical; // Allow resizing only vertically (optional)
+    height: 100px; // Adjust height to match your design
+}
+
+    // temporary add above
+
     input [type="text"],
     textarea {
         font-family: "avenir-pro-regular";
