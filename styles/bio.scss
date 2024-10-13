@@ -188,6 +188,25 @@
             margin-top:2rem;
         }
     }
+
+    @include tablet {
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        &forum {
+            &--avatar {
+                margin-top: 2rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    @include desktop {
+        padding-left: 18rem;
+        padding-right: 18rem;
+    }
+
+
 }
 
 .commentForum {
@@ -204,7 +223,6 @@
     }
 
     input [type="text"],
-
     textarea {
         font-family: "avenir-pro-regular";
         margin-bottom: 1rem;
@@ -232,7 +250,18 @@
         font-family: "avenir-pro-demi";
         font-size: 1rem;
         border: none;
+
+    } 
+
+    @include tablet {
+        width: 100%;
+
+        button {
+            width: 35%;
+            margin-left: auto;
+        }
     }
+}   
 
     .avatar {
         background-color: #E1E1E1 ;
@@ -276,7 +305,7 @@
 
 
 
-}
+
 
 
 
