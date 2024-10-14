@@ -43,7 +43,7 @@ function createLabelElement (labelText, labelTextContent) {
     labelElement.classList.add("shows__item__label");
 
     const contentElement = document.createElement("div");
-    contenetElement.textContent = labelTextContent;
+    contentElement.textContent = labelTextContent;
     contentElement.classList.add("shows__item__text");
 
     labelElement.appendChild(contentElement);
