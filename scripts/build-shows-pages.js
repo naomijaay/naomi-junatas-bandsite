@@ -49,3 +49,34 @@ function createLabelElement (labelText, labelTextContent) {
     labelElement.appendChild(contentElement);
     return labelElement;
 }
+
+function createShowElement(showObj) {
+    const showElement = document.createElement("div");
+    showElement.classList.add("shows__item");
+
+    const labelsContainer = document.createElement("div");
+    labelsContainer.classList.add("shows__item__labels-container");
+
+    labelsContainer.appendChild(createLabelElement("DATE", showObj.date));
+
+    labelsContainer.appendChild(createLabelElement("VENUE", showObj.venue));
+
+    labelsContainer.appendChild(createLabelElement("LOCATION", showObj.location));
+    
+    const button = document.createElement("button");
+    button.textContent = "BUY TICKETS";
+    button.classList.add("shows__item__button");
+
+    button.addEventListener("click", (event) => {
+        event.stopPropagation();
+        document.querySelectorAll(".shows__item").forEach((container) => {
+            container.classList.remove("shows__item--selected");
+        });
+        showElement.classList.add("shows__item--selected");
+    });
+
+    showElement.appendChild(labelsContainer);
+    showElement.appendChild(button);
+
+    return showElement;
+}   
