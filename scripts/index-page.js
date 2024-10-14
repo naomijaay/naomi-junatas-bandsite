@@ -48,7 +48,7 @@ function displayComment(comment) {
     const commentTextElement = document.createElement("p");
     commentTextElement.textContent = comment.comment;
     commentTextElement.classList.add("commentArea");
-    commentElement.appendChild(commentTextElemenet);
+    commentElement.appendChild(commentTextElement);
     
     commentBox.appendChild(commentElement);
 

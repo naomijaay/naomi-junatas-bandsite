@@ -40,13 +40,13 @@ body {
 }
 .nav__list--item--other {
   padding-bottom: 1rem;
-  padding-left: 20%;
-  padding-right: 25%;
+  padding-left: 20vw;
+  padding-right: 25vw;
 }
 .nav__list--item--current {
   padding-bottom: 1rem;
-  padding-right: 18%;
-  padding-left: 21%;
+  padding-right: 18vw;
+  padding-left: 21vw;
   border-bottom: 0.125rem solid #FFFFFF;
 }
 .nav__list--item--link {
