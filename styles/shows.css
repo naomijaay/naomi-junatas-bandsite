@@ -250,4 +250,19 @@ body {
   font-family: "avenir-pro-regular";
   font-size: 1rem;
   padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .shows-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .shows-list {
+    margin-left: 5 rem;
+    padding-top: 2 rem;
+  }
 }/*# sourceMappingURL=shows.css.map */
