@@ -204,23 +204,38 @@ body {
   padding-bottom: 8rem;
   padding-left: 1rem;
   padding-right: 2rem;
-  opacity: 90%;
+  opacity: 0.9;
   color: #FFFFFF;
 }
 .bandheader__title {
   font-family: "avenir-pro-demi";
   font-size: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .bandheader {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    padding-left: 2rem;
+  }
+  .bandheader__title {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .bandheader {
+    padding-bottom: 15rem;
+  }
+}
 
 .shows {
   padding-left: 1rem;
   font-size: 2rem;
   font-family: "avenir-pro-demi";
-  margin-left: 1 rem;
+  margin-left: 1rem;
   margin-right: 1rem;
 }
 .shows__item {
-  padding: 1 rem;
+  padding: 1rem;
   border-bottom: 0.03rem solid #AFAFAF;
   padding-right: 1rem;
 }
@@ -269,12 +284,12 @@ body {
     display: flex;
     flex-direction: row;
     align-self: flex-end;
-    padding-left: 3 rem;
+    padding-left: 3rem;
   }
   .shows__item__text {
     flex-direction: row;
     width: 10rem;
-    padding-bottom: 1 rem;
+    padding-bottom: 1rem;
   }
 }
 @media screen and (min-width: 1280px) {
