@@ -80,3 +80,32 @@ function createShowElement(showObj) {
 
     return showElement;
 }   
+
+function showTitle(container) {
+    const title = document.createElement("h2");
+    title.classList.add("shows");
+    title.textContent = "Shows";
+    container.appendChild(title);
+}
+
+function displayShows() {
+    const showsContainer = document.createElement("div");
+    showsContainer.classList.add("shows-container");
+
+    showTitle(showsContainer);
+
+    const showsList = document.createElement("div");
+    showsList.classList.add("shows-list");
+
+    shows.forEach((show) => {
+        const showElement = createShowElement(show);
+        showsList.appendChild(showElement);
+    });
+
+    showsContainer.appendChild(showsList);
+    const footer = document.querySelector("footer");
+    footer.parentNode.insertBefore(showsContainer, footer);
+
+}
+
+document.addEventListener("DOMContentLoaded", displayShows);

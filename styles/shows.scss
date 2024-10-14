@@ -9,13 +9,68 @@
     padding-bottom: 8rem;
     padding-left: 1rem;
     padding-right: 2rem;
-    opacity:80%;
+    opacity:90%;
     color: $white;
 
     &__title {
         font-family: "avenir-pro-demi";
         font-size: 2rem;
     }
+}
+
+.shows {
+    padding-left: 1rem;
+    font-size: 2rem;
+    font-family: "avenir-pro-demi";
+    margin-left: 1 rem;
+    margin-right: 1rem;
+
+    &__item {
+        padding: 1 rem;
+        border-bottom: 0.03rem solid #AFAFAF;
+        padding-right: 1rem;
+
+        &__label {
+            color: #AFAFAF;
+            font-family: "avenir-pro-demi";
+            font-size: 0.8rem;
+        }
+
+        &__button {
+            font-family: "avenir-pro-demi";
+            font-size: 1rem;
+            background-color: $dark;
+            color: $white;
+            border: none;
+            border-radius: 0.3rem;
+            padding: 1rem;
+            width: 100%;
+        }
+
+        &--selected {
+            background-color: #E1E1E1;
+        }
+
+        &:hover {
+            background-color: $offwhite;
+        }
+
+        &__text {
+            color: $dark;
+            font-family: "avenir-pro-regular";
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
+
+    }
+}
+
+.shows-container {
+
+}
+
+.shows-list {
+    
 }
 
 
