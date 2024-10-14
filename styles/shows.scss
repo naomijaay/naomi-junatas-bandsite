@@ -62,6 +62,45 @@
             padding-bottom: 1rem;
         }
 
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+
+            &__label {
+                margin-right: 1rem;
+            }
+
+            &__button {
+                width: auto;
+                margin-top: auto;
+                margin-left: auto;
+                margin-right: 2rem;
+            }
+
+            &__labels-container {
+                display: flex;
+                flex-direction: row;
+                align-self: flex-end;
+                padding-left: 3 rem;
+            }
+
+            &__text {
+                flex-direction: row;
+                width: 10rem;
+                padding-bottom: 1 rem;
+            }
+        }
+
+        @include desktop {
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 3rem;
+            padding-right: 1rem;
+
+            &__text {
+                width: 14rem;
+            }
+        }
     }
 }
 
@@ -71,14 +110,13 @@
         flex-direction: row;
         margin-left: 3rem;
     }
-
 }
 
 .shows-list {
     @include desktop {
-        margin-left: 5 rem;
-        padding-top: 2 rem;
-    }
+        margin-left: 5rem;
+        padding-top: 2rem;
+    } 
 }
 
 
