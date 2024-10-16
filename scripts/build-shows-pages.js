@@ -86,7 +86,7 @@ function createShowElement(showObj) {
         });
         showElement.classList.add("shows__item--selected");
     });
-    
+
 //buy tickets button highlights selected show by adding the class shows__item--selected (all other shows will have this class removed)    
 
     showElement.appendChild(labelsContainer);
@@ -95,6 +95,11 @@ function createShowElement(showObj) {
     return showElement;
 }   
 
+//showElement includes hte labelsContainer and the button, and then it is returned
+
+
+//showTitle creates and adppends the title (<h2>Shows<h2>) to the passed container
+
 function showTitle(container) {
     const title = document.createElement("h2");
     title.classList.add("shows");
@@ -102,11 +107,12 @@ function showTitle(container) {
     container.appendChild(title);
 }
 
+
 function displayShows() {
     const showsContainer = document.createElement("div");
     showsContainer.classList.add("shows-container");
 
-    showTitle(showsContainer);
+    showTitle(showsContainer);   //showsContainer is the container for the list of shows
 
     const showsList = document.createElement("div");
     showsList.classList.add("shows-list");
